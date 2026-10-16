@@ -1,23 +1,25 @@
 # Veilus Downloads
 
-Official releases for [Veilus](https://veilus.io) — the anti-detect browser built with Rust.
+Installers and release notes for [Veilus](https://veilus.io), an anti-detect browser your AI assistant drives over MCP.
 
-## Latest Release
+## Download
 
-Check the [Releases](https://github.com/veilus/releases/releases) page for download links.
+Get the latest installer from the [Releases](https://github.com/veilus/releases/releases/latest) page, or from [veilus.io/download](https://veilus.io/download/).
 
-| Platform | Status |
-|----------|--------|
-| Windows (x64) | ✅ Available |
-| macOS | 🔜 Coming soon |
-| Linux | 🔜 Coming soon |
+| Platform | File |
+|---|---|
+| Windows 10/11 (x64) | `Veilus_<version>_x64-setup.exe` or `Veilus_<version>_x64_en-US.msi` |
+| macOS 13.5+ (Apple Silicon) | `Veilus_<version>_aarch64.dmg` |
+
+There is no Linux version. The browser engine is downloaded inside the app on first launch. Installed apps update themselves from this repository.
 
 ## What is Veilus?
 
-Veilus is a high-performance anti-detect browser with built-in automation:
-- 🦀 Built with **Rust + Tauri** (3-5x faster than Electron alternatives)
-- 🎭 **Real Chromium fingerprinting** at the C++ level
-- 🤖 **VeilusFlow** — visual workflow automation
-- 🔒 **Zero-knowledge sync** — your data stays yours
+A desktop app for running many browser profiles on one computer:
 
-👉 [veilus.io](https://veilus.io) · [docs.veilus.io](https://docs.veilus.io)
+- Each profile has its own fingerprint and proxy (HTTP or SOCKS5), on a Chromium build Veilus patches in-house
+- Built-in MCP server: Claude Code, Cursor or any MCP client can create profiles, write and test Playwright scripts, and run them across profiles — scripts added over MCP run on at most 3 profiles until you approve them in the app
+- Profiles stay on your machine; Veilus Sync (optional) copies them to a Git repository or Google Drive folder you choose
+- Free for 5 profiles on one device
+
+👉 [veilus.io](https://veilus.io) · [docs.veilus.io](https://docs.veilus.io) · [changelog](https://veilus.io/changelog/) · [github.com/veilus](https://github.com/veilus)
